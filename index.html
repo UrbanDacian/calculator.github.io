@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <script src = "script.js"></script>
+  <link rel ="stylesheet" type="text/css" href="design.css">
+
+</head>
+<body>
+  <div class="calculator">
+    <div class="top" id = "top">
+      <p style="position: absolute ; left: 33%">calc</p>
+      <p>THEME</p>
+      <div class="radio">
+        <span class="radioIndicator">1 2 3</span>
+        <div class="radioButtons">
+          <input type="radio" onclick="pStyle(1)" name="btn" class="buttonRadio" id = "btn1">
+          <input type="radio" onclick="pStyle(2)" name="btn" class="buttonRadio" id = "btn2">
+          <input type="radio" onclick="pStyle(3)" name="btn" class="buttonRadio" id = "btn3">
+        </div>
+      </div>
+    </div>
+    <div class = "displayContent" typeof="string" id = "displayContent">0</div>
+    <div class="keypad" id = "keypad">
+      <div class="keypadRow">
+        <button class="digitBtn" onclick="addDigit(7)">7</button>
+        <button class="digitBtn" onclick="addDigit(8)">8</button>
+        <button class="digitBtn" onclick="addDigit(9)">9</button>
+        <button class="deleteBtn" onclick="deleteDigit()">DEL</button>
+      </div>
+      <div class="keypadRow">
+        <button class="digitBtn" onclick="addDigit(4)">4</button>
+        <button class="digitBtn" onclick="addDigit(5)">5</button>
+        <button class="digitBtn" onclick="addDigit(6)">6</button>
+        <button class="digitBtn" onclick="addNumber()">+</button>
+      </div>
+      <div class="keypadRow">
+        <button class="digitBtn" onclick="addDigit(1)">1</button>
+        <button class="digitBtn" onclick="addDigit(2)">2</button>
+        <button class="digitBtn" onclick="addDigit(3)">3</button>
+        <button class="digitBtn" onclick="subtractNumber()">-</button>
+      </div>
+      <div class="keypadRow">
+        <button class="digitBtn" onclick="changeUnits()">.</button>
+        <button class="digitBtn" onclick="addDigit(0)">0</button>
+        <button class="digitBtn" onclick="divideNumber()">/</button>
+        <button class="digitBtn" onclick="multiplyNumber()">x</button>
+      </div>
+      <div class="keypadRow">
+        <button class="resetBtn" onclick="resetNumbers()">RESET</button>
+        <button class="equalBtn" onclick="equal()">=</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Urban Dacian</a>.
+  </div>
+</body>
+</html>
