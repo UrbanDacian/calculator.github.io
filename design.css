@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap);
 
 body{
     display: flex;
@@ -20,35 +20,25 @@ body{
     font-size: 30px;
     gap: 20px;
 }
-.radio{
-    display: flex;
-    flex-direction: column;
-    gap: -10px;
-}
-
-.radioIndicator{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100px;
-}
 
 .radioButtons{
     display: flex;
     position: absolute;
-    top: 7%;
+    top: 2%;
     width: 100px;
     height: 40px;
     background-color: hsl(223, 31%, 20%);
     flex-direction: row;
-    border-radius: 10px;
+    border-radius: 30px;
     justify-content: space-between;
 }
 
 .buttonRadio{
     width: 50px;
     height: 40px;
-    border: 1px solid;
+    accent-color: hsl(6, 63%, 50%);
+    top: 6%;
+    margin-top: -0.5px;
 }
 
 .displayContent{
@@ -140,4 +130,42 @@ body{
     font-size: 20px;
     box-shadow: 0px 8px 6px hsl(224, 28%, 35%);
     font-family: 'League Spartan';
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: auto;
+        height: auto;
+    }
+    .top{
+        width: auto;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .displayContent{
+        height: auto;
+        width: auto;
+    }
+    .digitBtn{
+        height: 30px;
+        width: 70px;
+    }
+    .deleteBtn{
+        height: 30px;
+        width: 70px;
+    }
+    .resetBtn{
+        height: 30px;
+        width: 150px;
+    }.keypad{
+        height: max-content;
+        width: auto;
+    }.equalBtn{
+        height: 30px;
+        width: 150px;
+    }
+    .radioButtons {
+        position: absolute;
+        left: 70%;
+    }
 }

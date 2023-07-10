@@ -16,14 +16,14 @@
   <div class="calculator">
     <div class="top" id = "top">
       <p style="position: absolute ; left: 33%">calc</p>
-      <p>THEME</p>
-      <div class="radio">
-        <span class="radioIndicator">1 2 3</span>
-        <div class="radioButtons">
-          <input type="radio" onclick="pStyle(1)" name="btn" class="buttonRadio" id = "btn1">
-          <input type="radio" onclick="pStyle(2)" name="btn" class="buttonRadio" id = "btn2">
-          <input type="radio" onclick="pStyle(3)" name="btn" class="buttonRadio" id = "btn3">
-        </div>
+      <p style="position: absolute; top: -1.5%; left: 52%" class="theme">THEME</p>
+      <div class="radioButtons">
+          <input type="radio" onclick="pStyle(1)" name="btn" class="buttonRadio" id = "btn1" checked = "checked">
+          <label style="position: absolute; top: -50%; left: 10%; font-size: 20px" >1</label>
+          <input type="radio" onclick="pStyle(2)" name="btn" class="buttonRadio" id = "btn2" style="appearance: none">
+          <label style="position: absolute; top: -50%; left: 43%; font-size: 20px" >2</label>
+          <input type="radio" onclick="pStyle(3)" name="btn" class="buttonRadio" id = "btn3" style="appearance: none">
+          <label style="position: absolute; top: -50%; left: 77%; font-size: 20px" >3</label>
       </div>
     </div>
     <div class = "displayContent" typeof="string" id = "displayContent">0</div>

@@ -82,10 +82,6 @@ function changeUnits(){ // Introduces the "." for the decimals
 }
 
 function equal(){ // Calculates the result of the operation
-    while (!lastOperation.endsWith("addDigit")){
-        display = display.substring(0,display.length -1);
-        lastOperation = lastOperation.substring(0,lastOperation.length-1);
-    }
     display = (eval(display)).toString();
     show();
 }
@@ -135,11 +131,12 @@ function pStyle(option) {
         element[0].style.backgroundColor = "hsl(268, 71%, 12%)";
 
         element = document.getElementById("btn3");
-        element.style.backgroundColor = "hsl(176, 100%, 44%)";
+        element.style.appearance = "auto";
+        element.style.accentColor= "hsl(176, 100%, 44%)";
         element = document.getElementById("btn2");
-        element.style.backgroundColor = "hsl(268, 71%, 12%)";
+        element.style.appearance = "none"
         element = document.getElementById("btn1");
-        element.style.backgroundColor = "hsl(268, 71%, 12%)"
+        element.style.appearance = "none"
 
     } else if (option === 2) {
         document.body.style.backgroundColor = "hsl(0, 0%, 90%)";
@@ -180,11 +177,12 @@ function pStyle(option) {
         element[0].style.backgroundColor = "hsl(0, 5%, 81%)";
 
         element = document.getElementById("btn3");
-        element.style.backgroundColor = "hsl(0, 5%, 81%)";
+        element.style.appearance = "none"
         element = document.getElementById("btn2");
-        element.style.backgroundColor = "hsl(25, 98%, 40%)";
+        element.style.appearance = "auto";
+        element.style.accentColor= "hsl(25, 98%, 40%)";
         element = document.getElementById("btn1");
-        element.style.backgroundColor = "hsl(0, 5%, 81%)"
+        element.style.appearance = "none"
 
     } else {
         document.body.style.backgroundColor = "hsl(222, 26%, 31%)";
@@ -225,10 +223,11 @@ function pStyle(option) {
         element[0].style.backgroundColor = "hsl(223, 31%, 20%)";
 
         element = document.getElementById("btn3");
-        element.style.backgroundColor = "hsl(223, 31%, 20%)";
+        element.style.appearance = "none";
         element = document.getElementById("btn2");
-        element.style.backgroundColor = "hsl(223, 31%, 20%)";
+        element.style.appearance = "none"
         element = document.getElementById("btn1");
-        element.style.backgroundColor = "hsl(6, 63%, 50%)";
+        element.style.appearance = "auto";
+        element.style.accentColor= "hsl(6, 63%, 50%)";
     }
 }
