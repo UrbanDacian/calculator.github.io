@@ -87,7 +87,12 @@ function equal(){ // Calculates the result of the operation
 }
 
 function show(){
-    document.getElementById("displayContent").innerText = display;
+    if (display.length < 40){
+        document.getElementById("displayContent").innerText = display;
+    }
+    else {
+        document.getElementById("displayContent").innerText = display.substring(display.length-40, display.length);
+    }
 }
 
 function pStyle(option) {
